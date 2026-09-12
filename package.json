@@ -1,0 +1,12 @@
+{
+  "name": "sonohoka-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sonohoka website with basket checkout via Stripe and PayPal.",
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "stripe": "^16.0.0"
+  }
+}
