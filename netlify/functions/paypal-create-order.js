@@ -42,7 +42,7 @@ exports.handler = async (event) => {
         Authorization: `Bearer ${accessToken}`,
       },
       body: JSON.stringify({
-        intent: 'CAPTURE',
+        intent: 'CAPTURE', application_context: { shipping_preference: 'GET_FROM_FILE' },
         purchase_units: [{
           amount: {
             currency_code: 'GBP',
