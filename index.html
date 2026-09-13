@@ -131,7 +131,7 @@
   }
 
   /* ---------- hero ---------- */
-  .hero { padding-block: clamp(2.75rem, 7vw, 5rem); border-bottom: 1px solid var(--line); }
+  .hero { position: relative; overflow: hidden; padding-block: clamp(2.75rem, 7vw, 5rem); border-bottom: 1px solid var(--line); } .hero-bg { position: absolute; inset: -20px; background: url('hero-bg.jpg') center 22%/cover no-repeat; filter: blur(16px) brightness(0.55) saturate(0.9); transform: scale(1.08); z-index: 0; } .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,17,16,0.35) 0%, var(--paper) 97%); z-index: 0; } .hero-grid { position: relative; z-index: 1; }
   .hero-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
@@ -301,7 +301,7 @@
   .product-link:hover, .product-link:focus-visible { color: var(--red); border-color: var(--red); }
 
   /* ---------- ritual ---------- */
-  .ritual { background: var(--paper-dim); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .ritual { background: var(--paper-dim); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); } .ritual-layout { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; } @media (max-width: 860px) { .ritual-layout { grid-template-columns: 1fr; } .ritual-layout > div:last-child { order: -1; max-width: 320px; margin: 0 auto; } }
   .ritual-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -706,9 +706,7 @@
     </div>
   </section>
 
-  <section id="home-service" class="ritual">
-    <div class="wrap">
-      <div class="section-head">
+  <section id="home-service" class="ritual"> <div class="wrap"> <div class="ritual-layout"> <div> <div class="section-head">
         <div>
           <span class="tag">Now booking &middot; Essex &amp; London</span>
           <h2 style="margin-top:0.9rem;">The Home Cut</h2>
@@ -735,10 +733,7 @@
         </div>
       </div>
       <div style="margin-top: 2.2rem; display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap;">
-        <a class="btn-primary" href="https://wa.me/447446335119?text=Hi%20Sonohoka%21%20I%27d%20like%20to%20book%20a%20home%20visit.%0A%0APostcode%3A%0APreferred%20day%2Ftime%3A" target="_blank" rel="noopener">Book on WhatsApp</a>
-      </div>
-    </div>
-  </section>
+        <a class="btn-primary" href="https://wa.me/447446335119?text=Hi%20Sonohoka%21%20I%27d%20like%20to%20book%20a%20home%20visit.%0A%0APostcode%3A%0APreferred%20day%2Ftime%3A" target="_blank" rel="noopener">Book on WhatsApp</a> </div> </div> <div><div class="hero-photo-frame"><img src="home-cut.jpg" alt="A Sonohoka barber giving a precision home haircut" loading="lazy"></div><div class="hero-photo-cap"><span>The Home Cut</span><span>Essex &amp; London</span></div></div> </div> </div> </section>
 
   <section id="edit">
     <div class="wrap">
